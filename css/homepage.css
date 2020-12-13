@@ -1,0 +1,130 @@
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+a {
+  color: #F3FF00;
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.5s;
+  line-height: 1;
+}
+
+a:hover {
+  border-bottom-color: #F3FF00;
+}
+
+.homepage #homepage_img {
+  position: fixed;
+  top: 50%;
+  left:50%;
+  width: 400px;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+
+h1 {
+  position: fixed;
+  line-height: 0.5;
+  top: 5%;
+  left: 50%;
+  font-size: 160px;
+  transform: rotate(0deg)translate(-50%,0);
+  z-index: 2;
+}
+
+h3 {
+  font-size: 60px;
+  line-height: 0;
+}
+
+h6 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 0;
+}
+
+ol, ul {
+  list-style: none;
+  line-height: 2.5;
+}
+
+.subhead {
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+#uncover_description {
+  font-size: 16px;
+  position: fixed;
+  font-weight: 200;
+  top: 60px;
+  left: 50%;
+  transform: rotate(0deg)translate(-50%,0);
+}
+
+#logo {
+  position: fixed;
+  top: 130px;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+}
+
+.homepage {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.search {
+  position: fixed;
+  top: 50%;
+  left: 40px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) translate(-50%,0);
+  z-index: 2;
+}
+
+.about {
+  position: fixed;
+  top: 50%;
+  right: 40px;
+  transform-origin: 100% 0;
+  transform: rotate(90deg) translate(50%,0);
+  z-index: 2;
+
+}
+
+.discover {
+  position: fixed;
+  bottom: 80px;
+  line-height: 1;
+  left: 50%;
+  transform: rotate(180deg)translate(50%,0);
+}
+
+.fa-long-arrow-alt-down {
+  color: #ffffff;
+  font-size: 48px;
+  position: fixed;
+  bottom: 140px;
+  left: 50%;
+  transform: translate(-50%,0);
+  z-index: 2;
+}

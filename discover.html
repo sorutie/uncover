@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Music Genres</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/hover.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="music-menu">
+      <div class="logo"> Uncover </div>
+      <a href="search.html" class="search subhead">Search</a>
+      <a href="about.html" class="about subhead">About</a>
+
+      <nav class="navigation">
+        <ul class="menu">
+          <div class="headline">
+            <h3>Discover</h3>
+            <p>Choose a music genre</p>
+          </div>
+
+          <li class="navigation-link">
+            <a href="genre-pop.html" class="pop music-menu-overlay hvr-underline-from-left"
+            onmouseenter="playAudio()" preload="none" muted="muted"
+            data-overlay='.overlay-bg-pop'>Pop</a>
+          </li>
+          <li class="navigation-link">
+            <a href="genre-rock.html" class="rock music-menu-overlay hvr-underline-from-left"
+            data-overlay='.overlay-bg-rock'>Rock/ Metal</a>
+          </li>
+          <li class="navigation-link">
+            <a href="genre-hiphop.html" class="hiphop music-menu-overlay hvr-underline-from-left"
+            data-overlay='.overlay-bg-hiphop'>Rap/ Hiphop</a>
+          </li>
+          <li class="navigation-link">
+            <a href="genre-jazz.html" class="jazz music-menu-overlay hvr-underline-from-left"
+            data-overlay='.overlay-bg-jazz'>Jazz/Soul/Blues</a>
+          </li>
+          <li class="navigation-link">
+            <a href="genre-classical.html" class="classical music-menu-overlay hvr-underline-from-left"
+            data-overlay='.overlay-bg-classical'>Classical</a>
+          </li>
+          <li class="navigation-link">
+            <a href="genre-country.html" class="country music-menu-overlay hvr-underline-from-left"
+            data-overlay='.overlay-bg-country'>Country/Folk</a>
+          </li>
+        </ul>
+
+        <div class="overlay-bg overlay-bg-pop visible"></div>
+        <div class="overlay-bg overlay-bg-rock"></div>
+        <div class="overlay-bg overlay-bg-hiphop"></div>
+        <div class="overlay-bg overlay-bg-jazz"></div>
+        <div class="overlay-bg overlay-bg-classical"></div>
+        <div class="overlay-bg overlay-bg-country"></div>
+
+        <audio id="audioID">
+          <source src="audio/pop-taylorswift.mp3" type="audio/ogg">
+          <source src="audio/pop-taylorswift.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+      </nav>
+    </div>
+
+  <!-- Javascript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script>
+  var audio1 = document.getElementById("audioID");
+  //Example of an HTML Audio/Video Method
+
+  function playAudio() {
+    audio1.play()
+  }
+  </script>
+</body>
+
+
+</html>
